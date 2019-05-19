@@ -1,0 +1,17 @@
+[
+    {
+      "contactEmailAdress": "mhabib01@gmail.com",
+      "id": 1,
+      "name": "Leanne Graham",
+      "addressLine1": "123 Main Street",
+      "addressLine2": "Suite 456",
+      "city": "Gwenborough",
+      "state": "NJ",
+      "zip": "10010",
+      "phoneNumber": "1234567890",
+      "cardNumber": "1234567890123456",
+      "cardMonth": "02",
+      "cardYear": "22",
+      "cardCVV": "789"  
+    }
+]
