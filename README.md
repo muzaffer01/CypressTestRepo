@@ -2,10 +2,16 @@
 Sample Test Project with Cypress.io
 
 The following Tools should be installed on the Test Machine
+
 Installation of HomeBrew and npm
+
 Installation of MV Code
+
 Installation of Cypress
+
 Installation of Node.js
+
+
 
 
 Cypress Script Execution
