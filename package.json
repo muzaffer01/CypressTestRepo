@@ -4,7 +4,8 @@
   "description": "Sample Test Project with Cypress.io",
   "main": "index.js",
   "dependencies": {
-    "cypress": "^3.2.0"
+    "cypress": "^3.2.0",
+    "package.json": "^2.0.1"
   },
   "devDependencies": {},
   "scripts": {
