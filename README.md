@@ -11,7 +11,22 @@ Installation of Cypress
 
 Installation of Node.js
 
+===========================
 
+TEST CASES listed in (CypressTestRepo/cypress/integration/Cypress4GPS/)
+
+1. TC01_CheckForProduct.js	
+2. TC02_CartValidation.js	
+3. TC03_CheckOutAsGuestEmptySet.js	
+4. TC04_CheckOutAsGuestValidData.js	
+5. TC05_EmptyCart.js
+
+
+Fixture json listed in (CypressTestRepo/cypress/fixtures/)
+1. googleCheckout.json
+
+
+===========================
 
 
 Cypress Script Execution
@@ -22,6 +37,7 @@ OPEN CYPRES from Terminal
 Run Test Cases from Cypress UI Tool
 Click the test cases to run
 
+===========================
 
 Install HomeBrew
 https://www.howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/
