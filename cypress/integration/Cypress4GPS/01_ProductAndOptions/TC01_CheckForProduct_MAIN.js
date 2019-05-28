@@ -1,12 +1,10 @@
-/*
-Test Scenario: Search for Product, Select Options and Add to Cart
-Visit Google Play Store
-URL: https://store.google.com/
-*/
+//////////////////////////////////////////////////////////////////////
+//Test Scenario: Search for Product, Select Options and Add to Cart
+//Visit Google Play Store
+//URL: https://store.google.com/
+//////////////////////////////////////////////////////////////////////
 
 describe('Check For Product', function(){
-
-    
 
     // Create Global variable for the elements
     const navButtonPhone = '.products > button[data-category-id="phones"]'
