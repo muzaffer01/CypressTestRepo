@@ -43,17 +43,17 @@ describe('Check For Product', function(){
       })
 
       it('Product Details Page - Click the BUY Button', function() {
-          cy.wait (5000)  //added step as it displayed error message inconsistently as element not found
+          cy.wait (2000)  //added step as it displayed error message inconsistently as element not found
           cy.get(buyButton).should('contain', 'Buy').click({force:true})
         })
 
       it('Select Phone SIZE', function() {
-        cy.wait (5000)  //added step as it displayed error message inconsistently as element not found  
+        cy.wait (2000)  //added step as it displayed error message inconsistently as element not found  
         cy.get(phoneSizeBB).click({force:true})
         })
 
       it('Select Phone CARRIER', function() {
-        cy.wait (5000)  //added step as it displayed error message inconsistently as element not found  
+        cy.wait (2000)  //added step as it displayed error message inconsistently as element not found  
         cy.get(phoneCarrierBB).click({force:true})
         })
 
@@ -66,20 +66,20 @@ describe('Check For Product', function(){
         })
 
       it('Select Phone SERVICES - CLICK SKIP', function() {
-          cy.wait (5000)  //added step as it displayed error message inconsistently as element not found
+          cy.wait (2000)  //added step as it displayed error message inconsistently as element not found
           //cy.get(phoneServices).should('contain','Next').click()
           cy.get(phoneServices).should('contain','Skip').click()
       })
 
       // Review and Add Product to Cart
       it('REVIEW the Phone Choices Selected and Add to Cart', function() {
-          cy.wait (5000)  //added step as it displayed error message inconsistently as element not found
+          cy.wait (2000)  //added step as it displayed error message inconsistently as element not found
           cy.get(addToCart).first().should('contain','Add to cart').scrollIntoView().click()
       })
       
       //Go to Cart Page
       it('Suggested Accessories (skip) - Go To Cart', function() {
-          cy.wait (5000)  //added step as it displayed error message inconsistently as element not found
+          cy.wait (2000)  //added step as it displayed error message inconsistently as element not found
           cy.get(goToCart).should('contain', 'Go to cart').click()
       })
   })
