@@ -1,8 +1,8 @@
-/*
-Test Scenario: Checkout with NO Data and Validate Error Messages
-Visit Google Play Store
-URL: https://store.google.com/checkout
-*/
+//////////////////////////////////////////////////////////////////////
+//Test Scenario: Checkout with NO Data and Validate Error Messages
+//Visit Google Play Store
+//URL: https://store.google.com/checkout
+//////////////////////////////////////////////////////////////////////
 
 describe('Checkout as Guest', function(){
 
@@ -13,7 +13,7 @@ describe('Checkout as Guest', function(){
 
             // Cypress.Cookies.preserveOnce()
 
-            cy.visit('https://store.google.com/checkout')
+            cy.visit('/checkout')
             cy.get('.header-text-7').should('include', 'Checkout')
 
             cy.get('#paymentsParentDivIdIframe')

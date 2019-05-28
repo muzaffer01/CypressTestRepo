@@ -1,8 +1,8 @@
-/*
-Test Scenario: Validate Cart
-Visit Google Play Store
+//////////////////////////////////////////////////////////////////////
+//Test Scenario: Validate Cart
+//Visit Google Play Store
 URL: https://store.google.com/cart
-*/
+//////////////////////////////////////////////////////////////////////
 
 describe('Validate Cart Items', function(){
 
@@ -10,7 +10,7 @@ describe('Validate Cart Items', function(){
         
         // Navigate to Cart Page and Validate Product info
         it('Visit Cart Page', function() {
-            cy.visit('https://store.google.com/cart')
+            cy.visit('/cart')
             cy.url().should('include', '/cart')
             cy.title().should('include', 'Shopping Cart - Google Store')
             cy.get('.shopping-cart-title-padding').should('include', 'Shopping cart')

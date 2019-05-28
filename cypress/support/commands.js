@@ -23,3 +23,23 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+
+
+Cypress.Commands.add("emptyCartCommand", () => 
+{
+    cy.visit('/cart')
+    cy.title().should('include', 'Shopping Cart - Google Store')
+ 
+     //cy.wait(40000)
+
+    // If any item exists in cart, then remove items from cart, till the cart is empty
+    it('Rerun until Cart is Empty', function () {
+
+        if (cy.get('.cart-remove-button > .button-text').first().should('contain','Remove')) {
+            cy.get('.cart-remove-button > .button-text').first().click()  
+        } else {
+        cy.get('.your-cart-is-empty').should('contain', 'Your cart is empty') 
+            }
+  })
+})
